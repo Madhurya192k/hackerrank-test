@@ -1,0 +1,38 @@
+#include <map>
+#include <set>
+#include <list>
+#include <cmath>
+#include <ctime>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <string>
+#include <bitset>
+#include <cstdio>
+#include <limits>
+#include <vector>
+#include <climits>
+#include <cstring>
+#include <cstdlib>
+#include <fstream>
+#include <numeric>
+#include <sstream>
+#include <iostream>
+#include <algorithm>
+#include <unordered_map>
+
+using namespace std;
+int main() {
+    long long int n;
+    float sum=0,x=0;
+    cin >> n ;
+    long int a[n];
+    for(int i=0;i<n;i++)
+    {
+        cin >> a[i];
+        sum = sum + a[i];
+    }
+    x=sum/n;
+    printf("%.2f",x);
+    return 0;
+}
